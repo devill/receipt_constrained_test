@@ -1,24 +1,22 @@
 import re
 from datetime import date
-from pathlib import Path
 from approvaltests.namer.namer_base import NamerBase
-
-APPROVED_DIR = Path(__file__).parent / "approved"
 
 
 class FixtureNamer(NamerBase):
-    def __init__(self, name):
+    def __init__(self, name, approved_dir):
         super().__init__(extension=".txt")
         self._name = name
+        self._approved_dir = approved_dir
 
     def get_file_name(self):
         return self._name
 
     def get_directory(self):
-        return str(APPROVED_DIR)
+        return str(self._approved_dir)
 
     def config_directory(self):
-        return str(APPROVED_DIR)
+        return str(self._approved_dir)
 
 
 class ParsedReceipt:
@@ -51,6 +49,6 @@ class ParsedReceipt:
         return [(name, int(qty)) for name, qty, _ in self._items]
 
 
-def receipt_provider():
-    for approved_file in sorted(APPROVED_DIR.glob("*.approved.txt")):
+def receipt_provider(approved_dir):
+    for approved_file in sorted(approved_dir.glob("*.approved.txt")):
         yield ParsedReceipt(approved_file)
