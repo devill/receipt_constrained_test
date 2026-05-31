@@ -5,7 +5,6 @@ from pathlib import Path
 import pytest
 from approvaltests import Options, verify
 from approvaltests.namer.namer_base import NamerBase
-from approvaltests.reporters.report_quietly import ReportQuietly
 
 from receipt import format_receipt
 
@@ -75,7 +74,5 @@ def test_receipt_matches_approved(parsed_receipt):
     )
     verify(
         actual,
-        options=Options()
-        .with_namer(FixtureNamer(parsed_receipt.name()))
-        .with_reporter(ReportQuietly()),
+        options=Options().with_namer(FixtureNamer(parsed_receipt.name())),
     )
