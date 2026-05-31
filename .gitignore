@@ -2,6 +2,7 @@ __pycache__/
 .venv/
 .idea/
 .pytest_cache/
+.approval_tests_temp/
 *.received.txt
 .DS_Store
 .claude-channel/
