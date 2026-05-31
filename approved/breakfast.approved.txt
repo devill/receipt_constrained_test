@@ -1,0 +1,15 @@
+
+
+
+RECEIPT
+
+Date: 2026-01-15
+Payable by: 2026-01-22
+
+milk x 2 @ 1.50 = 3.00
+eggs x 12 @ 0.25 = 3.00
+cheese x 1 @ 4.00 = 4.00
+
+Subtotal: 10.00
+Tax:      2.00
+Total:    12.00
