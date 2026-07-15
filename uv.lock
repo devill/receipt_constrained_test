@@ -13,19 +13,19 @@ wheels = [
 
 [[package]]
 name = "approval-utilities"
-version = "18.1.1"
+version = "18.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5e/c2/4d69e9536f65b568edf60ebcd3f86a92f6270413315a9b0aa8cf4e4adab4/approval_utilities-18.1.1.tar.gz", hash = "sha256:3109770951a2bb3715900f9b9f4fcaf2960d33a60c87e6b38b96f90d56de12ae", size = 37982, upload-time = "2026-06-15T19:02:43.637Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/97/fd/43b4feb14f59fde1675d638081fc81d26dd0d743614cc1dadc3f1fe81c06/approval_utilities-18.2.0.tar.gz", hash = "sha256:96458dedcbacce90ed0f4aa457b43d1a453b9e8ec1483935199ae4fedadbc042", size = 37139, upload-time = "2026-06-28T18:03:41.44Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ec/d5/2c9d6a8d4a39885ede9b1bf4363dfe2f7f5186c195b948b8d3fa0d6b4368/approval_utilities-18.1.1-py3-none-any.whl", hash = "sha256:2069c7caef07d73a817a829b5c6d21d710b338cce85ff6f133933936f8345b3e", size = 19815, upload-time = "2026-06-15T19:02:42.579Z" },
+    { url = "https://files.pythonhosted.org/packages/99/70/9f02880490670c699fbf279099fa05f6338e3cb7f601fdb4d075dddaba39/approval_utilities-18.2.0-py3-none-any.whl", hash = "sha256:67343b3a70f276219ffa93763e940c96fd527c1b463e13e8502d455d578754ea", size = 19815, upload-time = "2026-06-28T18:03:40.317Z" },
 ]
 
 [[package]]
 name = "approvaltests"
-version = "18.1.1"
+version = "18.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "allpairspy" },
@@ -38,9 +38,9 @@ dependencies = [
     { name = "testfixtures" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4c/7b/5280f357ff6187ec0ece122a1185e9115298923c3a603315ce8748097269/approvaltests-18.1.1.tar.gz", hash = "sha256:6dc1b2d313e51133e2558e25fafe7d0017888c097e0bc4e3cc82c5f83120b48a", size = 67212, upload-time = "2026-06-15T19:02:49.452Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b8/4f/38cceffb7f2c9aef151ee426e484c18022cd0b0235d233fe1e4b11c3e0fb/approvaltests-18.2.0.tar.gz", hash = "sha256:a7aa2c989c742610f664aa32c6e5153f763e5aa6fa038491d8aa5a6a26d9f89a", size = 65913, upload-time = "2026-06-28T18:03:47.183Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ee/95/c027b47771241fe0fc7121cfdfed6b413413ba65b28b880675fbbc5258b3/approvaltests-18.1.1-py3-none-any.whl", hash = "sha256:cc399979396516c54874c709a8ecb5036d6b35cbca08552a0a172557c1360b48", size = 67734, upload-time = "2026-06-15T19:02:48.149Z" },
+    { url = "https://files.pythonhosted.org/packages/29/ad/72bfe4c0433c823640073e8f55159c8f5347fde37c514085f6ffc4c7d640/approvaltests-18.2.0-py3-none-any.whl", hash = "sha256:9465bcc0a288acc5894337fbb7e8a4264a2621de7c94971638f262d44825b3af", size = 67657, upload-time = "2026-06-28T18:03:45.982Z" },
 ]
 
 [[package]]
@@ -249,7 +249,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "approvaltests", specifier = ">=18.1.1" },
+    { name = "approvaltests", specifier = ">=18.2.0" },
     { name = "pytest", specifier = ">=9.1.1" },
 ]
 
